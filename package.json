@@ -1,0 +1,81 @@
+{
+  "name": "mythia",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro": "^3.5.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@pinwheel/react-modal": "^2.3.1",
+    "@sentry/react": "^6.2.1",
+    "@sentry/tracing": "^6.2.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "analytics-node": "^6.0.0",
+    "hamburger-react": "^2.3.0",
+    "moment": "^2.29.1",
+    "msw": "^0.27.1",
+    "plaid": "^8.2.0",
+    "posthog-js": "^1.16.6",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-cookies": "^0.1.1",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^17.0.1",
+    "react-facebook-pixel": "^1.0.4",
+    "react-fullstory": "^1.4.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-icomoon": "^2.1.5",
+    "react-paginate": "^7.0.0",
+    "react-plaid-link": "^3.1.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-slick": "^0.27.13",
+    "react-toastify": "^6.0.9",
+    "shortid": "^2.2.16",
+    "slick-carousel": "^1.8.1",
+    "smartystreets-javascript-sdk": "^1.7.2",
+    "smartystreets-javascript-sdk-utils": "^1.1.7",
+    "web-vitals": "^0.2.4",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "23.8.1",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "sh -ac '. ./.env.${REACT_APP_ENV}; react-scripts build'",
+    "build:beta": "REACT_APP_ENV=development npm run build",
+    "build:prod": "REACT_APP_ENV=production npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
